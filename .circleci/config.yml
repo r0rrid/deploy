@@ -6,5 +6,8 @@ heroku: circleci/heroku@1.0.1
 workflows:
         heroku_deploy:
                 jobs:
+                        - executor: heroku/default
+                        - checkout
+                        - heroku/install
                         - heroku/deploy-via-git
 

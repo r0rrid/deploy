@@ -6,5 +6,6 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-            commands: - heroku/deploy-via-git:
+            commands:
+                    - heroku/deploy-via-git:
                             force: true

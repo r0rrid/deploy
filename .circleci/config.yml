@@ -5,7 +5,7 @@ jobs:
           docker:
                   - image: r/cimg/base/tags/edge
 
-    steps:
-      - checkout
-      - heroku/install
-      - heroku/deploy-via-git
+          steps:
+                  - checkout
+                  - heroku/install
+                  - heroku/deploy-via-git

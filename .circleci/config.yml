@@ -5,6 +5,7 @@ orbs:
   heroku: circleci/heroku@0.0.10
 workflows:
   heroku_deploy:
-    commands:
-      - heroku/deploy-via-git:
-              force: "true"
+    jobs:
+            command:
+                    - heroku/deploy-via-git:
+                            force: true

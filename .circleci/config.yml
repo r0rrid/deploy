@@ -1,7 +1,8 @@
 # This circleci configuration file is designed to use a selenium docker image to test a 
 # very basic (button click) web app
 version: 2.1
-orbs: circleci/heroku@x.y
+orbs: 
+heroku: circleci/heroku@1.0.1
 workflows:
         heroku_deploy:
                 jobs:

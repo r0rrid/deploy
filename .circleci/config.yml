@@ -10,6 +10,7 @@ jobs:
           command: >
             echo "The command above installs Heroku, the command below deploys.
             What you do inbetween is up to you!"
+            ls -al
       - heroku/deploy-via-git
 orbs:
   heroku: circleci/heroku@1.0.1

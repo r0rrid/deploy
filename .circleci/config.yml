@@ -6,13 +6,6 @@ jobs:
     steps:
       - checkout
       - heroku/install
-      - run: ls -al
-        #      - run: heroku git:remote -a clickmetest
-        #- run: git push --force https://heroku:$HEROKU_API_KEY@git.heroku.com/clickmetest.git master
-      - run:
-          command: >
-            echo "The command above installs Heroku, the command below deploys.
-            What you do inbetween is up to you!"
       - heroku/deploy-via-git
 orbs:
   heroku: circleci/heroku@1.0.1

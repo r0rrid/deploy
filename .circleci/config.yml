@@ -7,6 +7,7 @@ jobs:
       - checkout
       - heroku/install
       - run: ls -al
+      - run: heroku git:remote -a clickmetest
       - run: git push --force heroku master
       - run:
           command: >

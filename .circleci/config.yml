@@ -1,10 +1,9 @@
 #
 #
 jobs:
-  deploy:
-    executor:
-            docker:
-                    - https://hub.docker.com/r/cimg/base/tags/edge
+  build:
+          docker:
+                  - image: r/cimg/base/tags/edge
 
     steps:
       - checkout
